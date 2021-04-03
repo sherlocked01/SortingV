@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sorting.css">
+    <title>Sorting Visualizer</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+
+            <div class="header-right ">
+                <p class="heading v-class-resp">Sorting Visualizer</p>
+
+                <div class="algos-left v-class-resp header-h-resp">
+                    <div class="array-inputs">
+                        <p class="size">Size of the array: </p>
+                        <input type="range" id="a_size" min=20 max=150 step=1 value=80>
+                        <p class="speed">Speed of algorittm: </p>
+                        <input type="range" id="a_speed" min=1 max=5 step=1 value=4>
+                        <!-- <button class="btn left">New Array</button> -->
+                    </div>
+                </div>
+
+                <div class="algos-right v-class-resp header-h-resp">
+                    <button class="btn left" id="a_generate">New Array</button>
+                    <button class="btn right">Bubble Sort</button>
+                    <button class="btn right">Selection Sort</button>
+                    <button class="btn right">Insertion Sort</button>
+                    <button class="btn right">Merge Sort</button>
+                    <button class="btn right">Quick Sort</button>
+                    
+                    
+                </div>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+
+
+        </nav>
+    </header>
+
+    <section class="sec">
+        
+        <div id="array_container">
+            
+        </div>
+        
+    </section>
+    <script src="./js_files/resp.js"></script>
+    <script src="./js_files/main.js"></script>
+    <script src="./js_files/visualization.js"></script>
+
+    <script src="./js_files/bubble.js"></script>
+    <script src="./js_files/insertion.js"></script>
+    <script src="./js_files/selection.js"></script>
+    <script src="./js_files/merge.js"></script>
+    <script src="./js_files/quick.js"></script>
+
+</body>
+
+</html>

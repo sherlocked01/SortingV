@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: visible;
+    color: white;
+    position: sticky;
+    top: 0;
+    
+}
+.sec{
+    /* background-color: rgb(28, 11, 88); */
+    height: 100vh;
+}
+#array_container{
+    /* background-color: blueviolet; */
+    height: 100vh;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 31px;
+    margin-right: 31px;
+
+}
+.header-right{
+    /* background-color: yellow; */
+    display: inline-block;
+    width: 100%;
+    justify-content: center;
+}
+.heading{
+    font-size: 35px;
+    font-weight: bold;
+    background-color: rgb(44, 8, 2);
+    /* background-color: white; */
+    /* color: black; */
+    display: block;
+    /* width: fit-content; */
+    /* justify-content: center; */
+    text-align: center;
+    margin-bottom: 13px;
+    padding: 8px 9px;
+    font-family: 'Akaya Telivigala', cursive;
+    
+
+}
+.algos-right{
+    /* background-color: turquoise; */
+    display: flex;
+    float: right;
+    margin-bottom: 9px;
+}
+.algos-left{
+    /* background-color: turquoise; */
+    display: inline-flex;
+}
+.array-inputs{
+    display: flex;
+    padding: 5px 8px;
+    margin-left: 10px;
+}
+#a_size{
+    margin-left: 3px;
+}
+#a_speed{
+    margin-left: 3px;
+}
+.size{
+    font-size: 18px;
+}
+.speed{
+    margin-left: 23px;
+    font-size: 18px;
+}
+.btn{
+    padding: 8px 9px;
+    margin: 2px 7px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    outline: none;
+}
+.left{
+    float: left;
+}
+.btn:hover{
+    background-color: grey;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width: 525px)
+{
+    .header-right{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .algos-right{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 270px;
+        transition: all 0.7s ease-out;
+        
+    }
+    .algos-left{
+        display: flex;
+        flex-direction: column;
+        /* height: 152px; */
+        /* transition: all 0.7s ease-out; */
+    }
+    .burger{
+        display: block;
+    }
+    .array-inputs{
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.7s ease-out;
+    }
+    #a_size{
+        display: flex;
+        margin-bottom: 5px;
+        /* flex-direction: column; */
+    }
+    #a_speed{
+        display: flex;
+        margin-bottom: 5px;
+    }
+    .btn{
+        width: 27%;
+    }
+    .header-h-resp{
+        height: 0px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+}
+@media only screen and (max-width: 473px)
+{
+    .btn{
+        width: 82%;
+    }
+    
+}
+
